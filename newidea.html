@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>TCC Solution</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	
+	<header>
+		<div class="container">
+			<div class="logo-box">
+			<a href="/">
+				<img src="https://html5book.ru/wp-content/uploads/2015/01/logo-header.png">
+			</a>
+			</div>
+			<nav>
+			<ul>
+			<li><a href="index.html">Buscar</a></li>
+			<li><a href="newidea.html">Nova ideia</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="myprojects.html">Meus projetos</a></li>
+			<li><a href="register.html">Registrar</a></li>
+		</ul>
+		</nav>
+		</div>
+	</header>
+
+	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					TCC Solution
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Insira seu nome">
+					<span class="label-input100">Titulo</span>
+					<input class="input100" type="text" name="title" placeholder="Insira seu titulo">
+				</div>
+				<input type="hidden" name="user_id" value="1">
+				<div class="wrap-input100 rs1-wrap-input100 validate-input">
+					<span class="label-input100">Categoria</span>
+					<input class="input100" type="text" name="category_id">
+				</div>
+				
+				<!--<div class="wrap-input100 rs1-wrap-input100 validate-input">
+					<span class="label-input100">Status</span>
+					<input class="input100" type="text" name="status">
+				</div>-->
+				
+				<!-- <div class="wrap-input100 rs1-wrap-input100 validate-input">
+					<span class="label-input100">Imagem</span>
+					<input class="-label-input100" type="file" name="image">
+				</div> -->
+
+				<div class="wrap-input100 validate-input" data-validate = "Descrição é necessária">
+					<span class="label-input100">Descrição</span>
+					<textarea class="input100" name="description" placeholder="Sua descrição aqui"></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" id="enviar">
+							ENVIAR
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<span class="contact100-more">
+				CRIADO POR ISABELLE K. MINEL - 2019
+		</span>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="js/newidea.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/search.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>TCC Solution</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="logo-box">
+			  <a href="index.html">
+				<img src="images/logo.png">
+			  </a>
+			</div>
+			<nav>
+			<ul>
+			  <li><a href="index.html">Buscar</a></li>
+			  <li><a href="newidea.html">Nova ideia</a></li>
+			  <li><a href="login.html">Login</a></li>
+			  <li><a href="myprojects.html">Meus projetos</a></li>
+			  <li><a href="register.html">Registrar</a></li>
+		   </ul>
+		  </nav>
+		  </div>
+	</header>
+	
+	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+
+	<div class="wrap-input100 rs1-wrap-input100 validate-input">
+		
+		<form class="contact100-form validate-form"></form>
+
+		<div style="color:#FFF; text-align:center !important">
+		
+		<span class="contact100-form-title" style="color:#FFF; text-align:center !important">
+		TCC Solution
+	</span>
+
+	<input type="radio" name="type" value="title"> Titulo
+		<input type="radio" name="type" value="category"> Categoria
+		<input type="radio" name="type" value="user"> Usuário
+		
+		</div>
+		
+		<input class="input100" type="search" name="search" id="searchField" placeholder="Pesquise um projeto"> 
+		<input type="image" class="search" src="images/icons/search.png" href="#" id="search" alt="submit">
+
+		<!--<div style="padding: 2% !important;"> </div>
+
+			<div class="container-contact100-form-btn">
+				<div class="wrap-contact100-form-btn">						
+					<div class="contact100-form-bgbtn"></div>
+					<button class="contact100-form-btn" id="new">
+						<a href="newidea.html">Nova ideia</a> 
+					</button>
+				</div>
+			</div>	-->
+
+		</form>	
+	</div>
+
+	<table>
+		<thead>
+			<th>Título</th>
+			<th>Descrição</th>
+			<th>Categoria</th>
+		</thead>
+		<tbody id="records_table">
+
+		</tbody>
+	</table>
+	
+		<span class="contact100-more">
+				CRIADO POR ISABELLE K. MINEL - 2019
+		</span>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+	<script src="js/main.js"></script>
+	<script src="js/newidea.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/handlebars-v4.4.3.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
