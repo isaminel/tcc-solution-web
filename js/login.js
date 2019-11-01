@@ -49,6 +49,8 @@
         // console.log("ID Token: " + id_token);
 
         checkLogin();
+
+        window.location.replace('/tcc-solution-front-certo/index.html');
     }
     
     function onFailure(error) {

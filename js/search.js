@@ -1,20 +1,37 @@
 $(document).ready(function () {
     $("#search").click(function (e) { 
-        $("#records_table tr").remove();
+        $("#container").html("");
         //console.log("olaaaaa");
             var radioValue = $("input[name='type']:checked").val();
+            var url = 'http://localhost/tcc-solution-api-master/api/v1/idea';
             var searchValue = $('#searchField').val();
+            console.log(searchValue);
+            if (radioValue && searchValue) {
+                url = url + '?' + radioValue + '=' + searchValue;
+            } else if (searchValue) {
+                url = url + '?title=' + searchValue + '&category=' + searchValue + '&user=' + searchValue;
+            } else {
+                url = url + '?title=' + searchValue + '&category=' + searchValue + '&user=' + searchValue;
+            }
+            
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost/tcc-solution-api-master/api/v1/idea' + '?' + radioValue + '=' + searchValue,
+                url: url,
                 success: function(response) {
                      if (response.success) {
                         $.each(response.idea, function(i, item) {
-                            var $tr = $('<tr>').append(
-                                $('<td>').text(item.title),
-                                $('<td>').text(item.description),
-                                $('<td>').text(item.category_name)
-                            ).appendTo('#records_table');
+                            var $tr = $('<div>').addClass('result').append(
+                                $('<a>', {
+                                    text: item.title,
+                                    href: '#'
+                                }).text(item.title),                              
+                                $('<p>').text(item.user_name),
+                                $('<a>', {
+                                    text: item.category_name,
+                                    href: '#'
+                                }),
+                                $('<p>').text(item.description),    
+                            ).appendTo('#container');
                         });
                         console.log(response.idea);
                      }

@@ -1,0 +1,40 @@
+
+	padding-bottom: 18px;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.result:nth-child(6) p:nth-child(2) { /*special case for 4th result as link displays inline with short title */
+	display: block;
+	/*margin-bottom: -13px;*/
+}
+
+.result:nth-child(6) p:nth-child(4) { /*fix line spacing for above special case */
+	margin-top: -13px;
+}
+
+/* ----------------
+     RELATED SEARCHES
+   ---------------- */
+
+#related > p {
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+#related table {
+	width: 450px; /*width between columns */
+}
+#related a {
+	text-decoration: none;
+	color: #1A0DAB;
+}
+
+#related a:hover {
+	text-decoration: underline;
+}
+
+#related table {
+	padding-top: 10px; /*equal top and bottom padding */
+	padding-bottom: 20px;
+	/*font-weight: bold;*/
+}
